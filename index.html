@@ -650,7 +650,7 @@
         </div>
       </div>
       <div>
-        <form class="contact-form" id="contact-form" onsubmit="handleSubmit(event)">
+        <form action="https://formspree.io/f/xdajdbwo" method="POST">
           <div class="form-group">
             <label for="name">Nom</label>
             <input type="text" id="name" name="name" placeholder="Votre nom" required>
@@ -722,7 +722,7 @@ document.querySelectorAll('.lang-section').forEach(el => langObs.observe(el));
 function handleSubmit(e) {
   e.preventDefault();
   const msg = document.getElementById('form-msg');
-  msg.textContent = 'Message envoyé — je vous répondrai sous 48h.';
+  msg.textContent = 'Message envoyé — je vous répondrai dès que possible.';
   e.target.reset();
   setTimeout(() => msg.textContent = '', 5000);
 }
