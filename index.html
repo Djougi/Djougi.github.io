@@ -39,7 +39,6 @@
     pointer-events: none; z-index: 1000; opacity: 0.4;
   }
 
-  /* ── NAV FIXE ── */
   nav.topnav {
     position: fixed; top: 0; left: 0; right: 0;
     z-index: 200;
@@ -54,7 +53,6 @@
   .nav-links a { font-family: var(--mono); font-size: 12px; color: var(--muted); text-decoration: none; letter-spacing: 0.06em; transition: color 0.2s; }
   .nav-links a:hover { color: var(--accent); }
 
-  /* ── HERO ── */
   #hero {
     min-height: 100vh;
     display: flex; flex-direction: column; justify-content: flex-end;
@@ -108,7 +106,6 @@
   }
   .scroll-hint::after { content: ''; width: 1px; height: 50px; background: var(--border-hover); }
 
-  /* ── SECTIONS ── */
   section { padding: 7rem 2.5rem; max-width: 1100px; margin: 0 auto; }
   .section-label {
     font-family: var(--mono); font-size: 13px; color: var(--accent);
@@ -121,7 +118,6 @@
     font-weight: 400; line-height: 1.1; margin-bottom: 3rem; letter-spacing: -0.01em;
   }
 
-  /* ── ABOUT ── */
   .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
   .about-text p { color: var(--muted); font-size: 16px; line-height: 1.8; margin-bottom: 1.2rem; }
   .about-text p strong { color: var(--text); font-weight: 400; }
@@ -130,11 +126,9 @@
   .stat-num { font-family: var(--serif); font-size: 42px; font-weight: 400; color: var(--accent); line-height: 1; }
   .stat-label { font-family: var(--mono); font-size: 13px; color: var(--muted); letter-spacing: 0.06em; text-align: right; max-width: 140px; }
 
-  /* ── SKILLS ── */
   #skills { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 100%; }
   #skills .inner { max-width: 1100px; margin: 0 auto; padding: 5rem 2.5rem; }
 
-  /* barres de niveau au-dessus du titre */
   .skill-category { background: var(--surface); padding: 2rem; transition: background 0.2s; }
   .skill-category:hover { background: var(--accent-dim); }
   .skill-level-row { display: flex; align-items: center; gap: 10px; margin-bottom: 0.6rem; }
@@ -152,7 +146,6 @@
   .pill { font-family: var(--mono); font-size: 13px; color: var(--muted); border: 1px solid var(--border-hover); padding: 4px 10px; border-radius: 2px; transition: all 0.2s; }
   .pill:hover { color: var(--accent); border-color: var(--accent); }
 
-  /* langues */
   .lang-section-title { font-family: var(--mono); font-size: 13px; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 1.5rem; }
   .lang-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem 3rem; }
   .lang-item { display: flex; flex-direction: column; gap: 8px; }
@@ -163,7 +156,6 @@
   .lang-bar-fill { height: 100%; background: var(--accent); border-radius: 2px; transform-origin: left; transform: scaleX(0); transition: transform 1s cubic-bezier(0.4,0,0.2,1); }
   .lang-bar-fill.animated { transform: scaleX(1); }
 
-  /* ── TIMELINE ── */
   .timeline { display: flex; flex-direction: column; }
   .timeline-item { display: grid; grid-template-columns: 200px 1px 1fr; gap: 0 2.5rem; padding-bottom: 3rem; }
   .timeline-item:last-child { padding-bottom: 0; }
@@ -176,7 +168,6 @@
   .timeline-bullets li { font-size: 14px; color: var(--muted); padding-left: 1.2rem; position: relative; line-height: 1.6; }
   .timeline-bullets li::before { content: '—'; position: absolute; left: 0; color: var(--border-hover); }
 
-  /* ── PROJECTS ── */
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1px; background: var(--border); border: 1px solid var(--border); }
   .project-card { background: var(--bg); padding: 2rem; transition: background 0.2s; position: relative; overflow: hidden; }
   .project-card::after { content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(90deg, transparent, var(--accent), transparent); transform: scaleX(0); transition: transform 0.4s; }
@@ -191,7 +182,6 @@
   .project-link:hover { color: var(--accent); }
   .project-link::after { content: '↗'; }
 
-  /* ── PROJET PRO ── */
   #projetpro { background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 100%; }
   #projetpro .inner { max-width: 1100px; margin: 0 auto; padding: 7rem 2.5rem; }
   .projetpro-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -203,7 +193,6 @@
   .career-step-title { font-family: var(--mono); font-size: 12px; color: var(--accent); letter-spacing: 0.08em; margin-bottom: 0.4rem; }
   .career-step-desc { font-size: 14px; color: var(--muted); line-height: 1.6; }
 
-  /* ── CONTACT ── */
   #contact { background: var(--surface); border-top: 1px solid var(--border); max-width: 100%; }
   #contact .inner { max-width: 1100px; margin: 0 auto; padding: 7rem 2.5rem; }
   .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
@@ -224,67 +213,34 @@
   .form-submit:hover { background: transparent; color: var(--accent); }
   .form-msg { font-family: var(--mono); font-size: 12px; color: var(--accent); margin-top: 0.5rem; min-height: 18px; }
 
-  /* ── FOOTER ── */
   footer { border-top: 1px solid var(--border); padding: 2rem 2.5rem; display: flex; align-items: center; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
   .footer-text { font-family: var(--mono); font-size: 12px; color: var(--muted); }
 
-  /* ── ANIMATIONS ── */
   @keyframes fadeUp { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
   @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
   .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.7s ease, transform 0.7s ease; }
   .reveal.visible { opacity: 1; transform: translateY(0); }
 
-  /* ── HAMBURGER ── */
   .nav-hamburger {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 36px; height: 36px;
-    background: none; border: none; cursor: pointer; padding: 4px;
-    z-index: 300;
+    display: none; flex-direction: column; justify-content: center; gap: 5px;
+    width: 36px; height: 36px; background: none; border: none; cursor: pointer; padding: 4px; z-index: 300;
   }
-  .nav-hamburger span {
-    display: block; width: 100%; height: 1.5px;
-    background: var(--text);
-    border-radius: 2px;
-    transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s;
-    transform-origin: center;
-  }
+  .nav-hamburger span { display: block; width: 100%; height: 1.5px; background: var(--text); border-radius: 2px; transition: transform 0.3s ease, opacity 0.3s ease, background 0.2s; transform-origin: center; }
   .nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); background: var(--accent); }
   .nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
   .nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); background: var(--accent); }
 
-  /* ── MOBILE MENU OVERLAY ── */
   .nav-mobile-menu {
-    display: none;
-    position: fixed; inset: 0; top: 57px;
-    background: rgba(10,10,10,0.97);
-    backdrop-filter: blur(24px);
-    z-index: 190;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 0;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.3s ease;
+    display: none; position: fixed; inset: 0; top: 57px;
+    background: rgba(10,10,10,0.97); backdrop-filter: blur(24px);
+    z-index: 190; flex-direction: column; align-items: center; justify-content: center;
+    gap: 0; opacity: 0; pointer-events: none; transition: opacity 0.3s ease;
   }
-  .nav-mobile-menu.open {
-    opacity: 1;
-    pointer-events: all;
-  }
-  .nav-mobile-menu a {
-    font-family: var(--mono); font-size: 13px; color: var(--muted);
-    text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase;
-    padding: 1.4rem 2rem; width: 100%; text-align: center;
-    border-bottom: 1px solid var(--border);
-    transition: color 0.2s, background 0.2s;
-  }
+  .nav-mobile-menu.open { opacity: 1; pointer-events: all; }
+  .nav-mobile-menu a { font-family: var(--mono); font-size: 13px; color: var(--muted); text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; padding: 1.4rem 2rem; width: 100%; text-align: center; border-bottom: 1px solid var(--border); transition: color 0.2s, background 0.2s; }
   .nav-mobile-menu a:first-child { border-top: 1px solid var(--border); }
   .nav-mobile-menu a:hover, .nav-mobile-menu a:active { color: var(--accent); background: var(--accent-dim); }
 
-  /* ── MOBILE ── */
   @media (max-width: 768px) {
     nav.topnav { padding: 0.85rem 1.25rem; }
     .nav-links { display: none; }
@@ -307,7 +263,6 @@
 </head>
 <body>
 
-<!-- ── NAV FIXE EN HAUT ── -->
 <nav class="topnav">
   <a href="#hero" class="nav-logo">Portfolio</a>
   <ul class="nav-links">
@@ -323,7 +278,6 @@
   </button>
 </nav>
 
-<!-- ── MENU MOBILE ── -->
 <div class="nav-mobile-menu" id="mobileMenu" aria-hidden="true">
   <a href="#about" class="mobile-link">01 — Qui je suis</a>
   <a href="#skills" class="mobile-link">02 — Compétences</a>
@@ -333,14 +287,13 @@
   <a href="#contact" class="mobile-link">06 — Contact</a>
 </div>
 
-<!-- ── HERO ── -->
 <div id="hero">
   <div class="hero-inner">
     <div class="hero-tag">Disponible pour alternance de 24 mois — Rythme 1 sem / 1 sem</div>
     <h1 class="hero-name">Abder&shy;<em>rahmane</em><br>Beldjoudi</h1>
     <p class="hero-subtitle">Futur Master MIAGE — Paris Dauphine</p>
     <p class="hero-desc">
-      Prochainement étudiant en <strong>Master MIAGE</strong> à Université Paris Dauphine – PSL, je recherche une <strong>alternance</strong> me permettant de contribuer concrètement à des <strong>projets</strong> tout en développant mes <strong>compétences techniques</strong> et métier. <strong>Sérieux</strong>, <strong>curieux</strong> et <strong>capable</strong> de monter rapidement en <strong>compétence</strong>, je m’investis pleinement dans ce que j’entreprends.
+      Prochainement étudiant en <strong>Master MIAGE</strong> à Université Paris Dauphine – PSL, je recherche une <strong>alternance</strong> me permettant de contribuer concrètement à des <strong>projets</strong> tout en développant mes <strong>compétences techniques</strong> et métier. <strong>Sérieux</strong>, <strong>curieux</strong> et <strong>capable</strong> de monter rapidement en <strong>compétence</strong>, je m'investis pleinement dans ce que j'entreprends.
     </p>
     <div class="hero-cta">
       <a href="#projects" class="btn btn-primary">Voir mes projets</a>
@@ -350,18 +303,13 @@
   <div class="scroll-hint">scroll</div>
 </div>
 
-<!-- ── ABOUT ── -->
 <section id="about">
   <div class="section-label">01 — Qui je suis</div>
   <div class="section-heading reveal">Un profil à<br>l'intersection<br>du code<br><em style="font-style:italic;color:var(--accent)">et du métier.</em></div>
   <div class="about-grid reveal">
     <div class="about-text">
-      <p>
-        Diplômé d'une <strong>Licence Informatique</strong> à Sorbonne Paris-Nord, je rejoins le <strong>Master MIAGE à Paris Dauphine</strong> en alternance. La MIAGE, c'est l'interface rare entre informatique et gestion d'entreprise — exactement là où je veux opérer.
-      </p>
-      <p>
-        J'ai eu l'occasion d'effectuer un <strong>stage de Chef de Projet SI chez ONET Airport</strong> où j'ai traduit des besoins métier en architectures SI et coordonné des équipes en Agile. En parallèle, j'ai mené des projets techniques variés — de <strong>l'IA appliquée à des données historiques</strong> ou encore au <strong>au développement web</strong> pour des clients réels.
-      </p>
+      <p>Diplômé d'une <strong>Licence Informatique</strong> à Sorbonne Paris-Nord, je rejoins le <strong>Master MIAGE à Paris Dauphine</strong> en alternance. La MIAGE, c'est l'interface rare entre informatique et gestion d'entreprise — exactement là où je veux opérer.</p>
+      <p>J'ai eu l'occasion d'effectuer un <strong>stage de Chef de Projet SI chez ONET Airport</strong> où j'ai traduit des besoins métier en architectures SI et coordonné des équipes en Agile. En parallèle, j'ai mené des projets techniques variés — de <strong>l'IA appliquée à des données historiques</strong> ou encore au <strong>développement web</strong> pour des clients réels.</p>
       <p style="margin-top:1.5rem;"><a href="#contact" class="btn btn-secondary" style="display:inline-flex;">Me contacter</a></p>
     </div>
     <div class="about-stats">
@@ -385,12 +333,10 @@
   </div>
 </section>
 
-<!-- ── SKILLS ── -->
 <div id="skills">
   <div class="inner">
     <div class="section-label">02 — Compétences</div>
     <h2 class="section-heading reveal">Stack technique</h2>
-
     <div class="skills-grid reveal" id="skills-grid">
       <div class="skill-category">
         <div class="skill-level-row">
@@ -436,11 +382,11 @@
         <div class="skill-cat-title">Méthodes & Outils</div>
         <div class="skill-pills">
           <span class="pill">Git</span><span class="pill">Jira</span><span class="pill">Agile / Scrum</span>
-          <span class="pill">Architecture SI</span><span class="pill">Excel VBA</span><span class="pill">Spécifications techniques</span><span class="pill">JUnit</span>
+          <span class="pill">Architecture SI</span><span class="pill">Excel VBA</span>
+          <span class="pill">Spécifications techniques</span><span class="pill">JUnit</span>
         </div>
       </div>
     </div>
-
     <div class="lang-section reveal">
       <div class="lang-section-title">Langues</div>
       <div class="lang-grid">
@@ -466,55 +412,56 @@
   <div class="section-label">03 — Parcours</div>
   <h2 class="section-heading reveal">Expériences<br>& Formation</h2>
   <div class="timeline reveal">
+
     <div class="timeline-item">
-      <div class="timeline-date">2025</div>
+      <div class="timeline-date">2024 — 2025<br>Total 4 mois</div>
       <div class="timeline-line"></div>
       <div class="timeline-content">
-        <div class="timeline-title">Stage Data Engineer</div>
-        <div class="timeline-company">ONET AIRPORT</div>
+        <div class="timeline-title">Stagiaire — ONET Airport</div>
+        <div class="timeline-company">ROISSY-EN-FRANCE</div>
+
+        <div style="font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:0.06em;margin-bottom:0.6rem;margin-top:1rem;">Data Engineer — 2025</div>
         <ul class="timeline-bullets">
-          <li>Collecte, nettoyage et modélisation de données aéroportuaires (analyse des pipelines : bagages traités, délai de l’opération).</li>
-          <li>Conception de dashboards Power BI permettant aux équipes opérationnelles de suivre en temps réel leurs indicateurs clés (stock, effectifs nécessaires, horaires d’activité).</li>
-          <li>Définition et suivi de KPIs (volumes de bagages, temps d’intervention, trajets, productivité des équipes) afin d’optimiser les opérations sur le terrain.</li>
+          <li>Analyse quotidienne de plusieurs milliers de mouvements de bagages issus de centaines de vols ; identification des retards, anomalies et goulots d'étranglement dans les opérations.</li>
+          <li>Conception et maintenance de tableaux de bord Power BI pour le suivi en temps réel des performances opérationnelles : bagages traités par heure, taux de respect des délais, taux d'occupation des équipes, taux de retards liés aux vols.</li>
+          <li>Exploitation des données de vols et des systèmes opérationnels pour anticiper les pics d'activité et optimiser la répartition des missions terrain ; contrôle qualité des données et correction des anomalies détectées.</li>
+          <li>Développement de traitements Python/SQL (PostgreSQL) pour automatiser les reportings ; utilisation de Power Query et Excel avancé pour l'exploitation et la modélisation des données.</li>
+        </ul>
+
+        <div style="font-family:var(--mono);font-size:12px;color:var(--accent);letter-spacing:0.06em;margin-bottom:0.6rem;margin-top:1.2rem;">Chef de Projet SI — 2024</div>
+        <ul class="timeline-bullets">
+          <li>Pilotage du projet <strong style="color:var(--text);font-weight:400;">Jalonet</strong> (application web et mobile no-code destinée aux équipes terrain) : recueil des besoins métiers, rédaction des spécifications fonctionnelles et suivi des évolutions produit.</li>
+          <li>Animation des ateliers de cadrage avec les utilisateurs et coordination des échanges entre les différentes parties prenantes.</li>
+          <li>Réalisation des tests fonctionnels sur les versions web et mobile ; suivi et priorisation des anomalies via Jira.</li>
+          <li>Sélection et déploiement des équipements terrain ainsi que des solutions MDM pour l'administration et la sécurisation du parc mobile.</li>
         </ul>
       </div>
     </div>
+
     <div class="timeline-item">
-      <div class="timeline-date">2024</div>
-      <div class="timeline-line"></div>
-      <div class="timeline-content">
-        <div class="timeline-title">Stage Chef de Projet SI</div>
-        <div class="timeline-company">ONET AIRPORT</div>
-        <ul class="timeline-bullets">
-          <li>Rédaction d’un cahier des charges et suivi de l’évolution des attentes du client.</li>
-          <li>Collaboration avec les devs/UX pour définir les maquettes, l’architecture et les choix techniques à chaque Sprint.</li>
-          <li>Participation à l’évaluation et à la sélection des équipements destinés aux opérations terrain.</li>
-          <li>Réalisation des tests fonctionnels, report des bugs/anomalies via Jira à l’équipe Dév.</li>
-        </ul>
-      </div>
-    </div>
-    <div class="timeline-item">
-      <div class="timeline-date">2023 – 2024</div>
+      <div class="timeline-date">2023 – En cours</div>
       <div class="timeline-line"></div>
       <div class="timeline-content">
         <div class="timeline-title">Développeur Web Freelance</div>
         <div class="timeline-company">INDÉPENDANT</div>
         <ul class="timeline-bullets">
-          <li>Mise en production de sites web pour commerces locaux, passant par le développement du code (HTML, CSS, JavaScript, PHP) à l’hébergement et la configuration du serveur (Nginx, Apache).</li>
+          <li><strong style="color:var(--text);font-weight:400;">Tapis En Folie</strong> : développement et mise en production d'un site web pour un client réel (HTML, CSS, JavaScript, PHP, Nginx), incluant hébergement, maintenance et accompagnement utilisateur.</li>
         </ul>
       </div>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-date">2023 – En cours</div>
       <div class="timeline-line"></div>
       <div class="timeline-content">
         <div class="timeline-title">Employé de Restauration — CDI 15h</div>
-        <div class="timeline-company">IKEA</div>
+        <div class="timeline-company">IKEA ÉVRY</div>
         <ul class="timeline-bullets">
-          <li>Activité menée en parallèle des études, démontrant mon sens de l’organisation, mon adaptabilité et ma rigueur dans le travail.</li>
+          <li>Activité menée en parallèle des études depuis 3 ans : rigueur, organisation et travail en équipe.</li>
         </ul>
       </div>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-date">2022 – 2026</div>
       <div class="timeline-line"></div>
@@ -526,6 +473,7 @@
         </ul>
       </div>
     </div>
+
     <div class="timeline-item">
       <div class="timeline-date">2021 – 2022</div>
       <div class="timeline-line"></div>
@@ -537,40 +485,34 @@
         </ul>
       </div>
     </div>
+
   </div>
 </section>
 
-<!-- ── PROJECTS ── -->
 <section id="projects">
   <div class="section-label">04 — Projets</div>
   <h2 class="section-heading reveal">Ce que j'ai<br>construit.</h2>
   <div class="projects-grid reveal">
-
-    <!-- 1. Compilateur OCaml -->
     <div class="project-card">
       <div class="project-tag">Compilation · Langages · Bas niveau</div>
       <div class="project-title">Compilateur JS → Mini-Machine</div>
-      <p class="project-desc">Conception en OCaml d'un compilateur qui traduit un sous-ensemble de JavaScript vers un langage machine simplifié (instructions CstNb, AddNb…). Le projet couvre toutes les étapes : analyse lexicale, parsing, construction d'un AST, puis génération de bytecode exécutable par une machine virtuelle maison.</p>
+      <p class="project-desc">Conception en OCaml d'un compilateur qui traduit un sous-ensemble de JavaScript vers un langage machine simplifié. Le projet couvre toutes les étapes : analyse lexicale, parsing, construction d'un AST, puis génération de bytecode exécutable par une machine virtuelle maison.</p>
       <div class="project-stack">
         <span class="stack-tag">OCaml</span><span class="stack-tag">Lexer / Parser</span>
         <span class="stack-tag">AST</span><span class="stack-tag">Génération de bytecode</span><span class="stack-tag">VM</span>
       </div>
       <a href="https://git.ig-edu.univ-paris13.fr/e12200468/compilation-project" class="project-link">Voir le projet</a>
     </div>
-
-    <!-- 2. Tapisserie de Bayeux -->
     <div class="project-card">
       <div class="project-tag">Data · Computer Vision · GenAI</div>
       <div class="project-title">Tapisserie de Bayeux — Recherche sémantique</div>
-      <p class="project-desc">Préparation et traitement d'un jeu de données historiques pour alimenter des modèles d'IA générative et de computer vision (dont CLIP d'OpenAI). Ce projet a été le déclic vers la data science : travailler sur des données complexes pour produire quelque chose d'utile et d'inédit.</p>
+      <p class="project-desc">Préparation et traitement d'un jeu de données historiques pour alimenter des modèles d'IA générative et de computer vision (dont CLIP d'OpenAI). Travailler sur des données complexes pour produire quelque chose d'utile et d'inédit.</p>
       <div class="project-stack">
         <span class="stack-tag">Python</span><span class="stack-tag">Computer Vision</span>
         <span class="stack-tag">GenAI</span><span class="stack-tag">Data pipeline</span>
       </div>
       <a href="https://drive.google.com/drive/folders/1aZZgjihKIYM2tduot9vMLyl9A2bH4Tce" class="project-link">Voir le projet</a>
     </div>
-
-    <!-- 3. Finder -->
     <div class="project-card">
       <div class="project-tag">Application · Backend · BDD</div>
       <div class="project-title">Finder — Recherche de films</div>
@@ -581,8 +523,6 @@
       </div>
       <a href="https://gitlab.sorbonne-paris-nord.fr/12112181/moviefinder-bdd-2025/-/tree/main?ref_type=heads" class="project-link">Voir le projet</a>
     </div>
-
-    <!-- 4. Exapunks -->
     <div class="project-card">
       <div class="project-tag">Java · POO · Tests</div>
       <div class="project-title">Jeu Exapunks — Simulateur simplifié</div>
@@ -593,12 +533,10 @@
       </div>
       <a href="https://gitlab.sorbonne-paris-nord.fr/12207236/syntaxevasionproject" class="project-link">Voir le projet</a>
     </div>
-
-    <!-- 5. Tapis En Folie -->
     <div class="project-card">
       <div class="project-tag">Web · Frontend · Freelance</div>
       <div class="project-title">Tapis En Folie</div>
-      <p class="project-desc">Site vitrine et catalogue en ligne pour un commerce spécialisé dans les tapis. Le client présente ses collections (velours, laine, synthétique…), les dimensions disponibles et les tarifs. Projet réalisé en freelance : recueil des besoins, maquettage, développement et mise en production sur serveur.</p>
+      <p class="project-desc">Site vitrine et catalogue en ligne pour un commerce spécialisé dans les tapis. Projet réalisé en freelance : recueil des besoins, maquettage, développement et mise en production sur serveur.</p>
       <div class="project-stack">
         <span class="stack-tag">HTML</span><span class="stack-tag">CSS</span>
         <span class="stack-tag">JavaScript</span><span class="stack-tag">PHP</span>
@@ -606,8 +544,6 @@
       </div>
       <a href="#" class="project-link">Voir le projet</a>
     </div>
-
-    <!-- 6. Protocole client-serveur -->
     <div class="project-card">
       <div class="project-tag">Systèmes · Cloud · Réseau</div>
       <div class="project-title">Protocole client-serveur & Hébergement cloud</div>
@@ -618,27 +554,19 @@
       </div>
       <a href="https://gitlab.sorbonne-paris-nord.fr/12200468/freescord" class="project-link">Voir le projet</a>
     </div>
-
   </div>
 </section>
 
-<!-- ── PROJET PRO ── -->
 <div id="projetpro">
   <div class="inner">
     <div class="section-label">05 — Projet professionnel</div>
     <h2 class="section-heading reveal">Où je veux<br>aller.</h2>
     <div class="projetpro-grid reveal">
       <div class="projetpro-text">
-        <p>
-          Mon ambition, c'est de devenir quelqu'un qui <strong>comprend les données autant que le terrain</strong> — et qui sait faire parler les deux ensemble. Pas uniquement data, pas uniquement SI : les deux, selon ce que le contexte demande.
-        </p>
-        <p>
-          J'ai deux déclics concrets derrière moi : le projet <strong>Tapisserie de Bayeux</strong>, où j'ai découvert ce qu'on peut extraire de données complexes avec les bons outils. Et mon <strong>stage chez ONET Airport</strong>, où j'ai compris que la technique ne vaut que si elle répond à un vrai besoin.
-        </p>
-        <p>
-          En parallèle, je collabore avec un ami porteur d'un projet dans <strong>l'aéronautique</strong> — l'ambition à terme d'une structure de fabrication — pour lequel j'apporte une vision tech et data. Ce genre de défi concret, c'est exactement ce qui me motive.
-        </p>
-            </div>
+        <p>Mon ambition, c'est de devenir quelqu'un qui <strong>comprend les données autant que le terrain</strong> — et qui sait faire parler les deux ensemble. Pas uniquement data, pas uniquement SI : les deux, selon ce que le contexte demande.</p>
+        <p>J'ai deux déclics concrets derrière moi : le projet <strong>Tapisserie de Bayeux</strong>, où j'ai découvert ce qu'on peut extraire de données complexes avec les bons outils. Et mon <strong>stage chez ONET Airport</strong>, où j'ai compris que la technique ne vaut que si elle répond à un vrai besoin.</p>
+        <p>En parallèle, je collabore avec un ami porteur d'un projet dans <strong>l'aéronautique</strong> — l'ambition à terme d'une structure de fabrication — pour lequel j'apporte une vision tech et data. Ce genre de défi concret, c'est exactement ce qui me motive.</p>
+      </div>
       <div class="career-steps">
         <div class="career-step">
           <div class="career-step-title">ALTERNANCE — MASTER MIAGE</div>
@@ -665,7 +593,6 @@
   </div>
 </div>
 
-<!-- ── CONTACT ── -->
 <div id="contact">
   <div class="inner">
     <div class="contact-grid reveal">
@@ -674,15 +601,9 @@
         <div class="contact-heading">Travaillons<br><em>ensemble.</em></div>
         <p class="contact-subtext">Disponible dès juin 2026 en Île-de-France pour une alternance Master MIAGE. N'hésitez pas à m'écrire.</p>
         <div class="contact-links">
-          <span class="contact-link">
-            beldjoudiabdou2139@gmail.com <span>EMAIL ↗</span>
-          </span>
-          <span class="contact-link">
-            +33 7 49 07 89 60 <span>TEL ↗</span>
-          </span>
-          <a href="https://www.linkedin.com/in/beldjoudi-abderrahmane-46a241357" target="_blank" class="contact-link">
-            LinkedIn <span>RÉSEAU ↗</span>
-          </a>
+          <span class="contact-link">beldjoudiabdou2139@gmail.com <span>EMAIL ↗</span></span>
+          <span class="contact-link">+33 7 49 07 89 60 <span>TEL ↗</span></span>
+          <a href="https://www.linkedin.com/in/beldjoudi-abderrahmane-46a241357" target="_blank" class="contact-link">LinkedIn <span>RÉSEAU ↗</span></a>
         </div>
       </div>
       <div>
@@ -713,7 +634,6 @@
 </footer>
 
 <script>
-// Hamburger menu
 const hamburger = document.getElementById('hamburger');
 const mobileMenu = document.getElementById('mobileMenu');
 function toggleMenu(open) {
@@ -728,7 +648,6 @@ document.querySelectorAll('.mobile-link').forEach(link => {
   link.addEventListener('click', () => toggleMenu(false));
 });
 
-// Scroll reveal
 const obs = new IntersectionObserver((entries) => {
   entries.forEach((e, i) => {
     if (e.isIntersecting) {
@@ -739,7 +658,6 @@ const obs = new IntersectionObserver((entries) => {
 }, { threshold: 0.1 });
 document.querySelectorAll('.reveal').forEach(el => obs.observe(el));
 
-// Skill level bars (au-dessus des titres)
 const skillObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -755,7 +673,6 @@ const skillObs = new IntersectionObserver((entries) => {
 }, { threshold: 0.2 });
 document.querySelectorAll('#skills-grid').forEach(el => skillObs.observe(el));
 
-// Language bars
 const langObs = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
